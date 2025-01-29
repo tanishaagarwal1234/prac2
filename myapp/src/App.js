@@ -1,11 +1,17 @@
 // import logo from './logo.svg';
 // import './App.css';
-import ParentComponent from './ParentComponent';
+import Userprofile from "./Userprofile";
 
 function App() {
+  const userData = {
+    name: 'Tanisha',
+    age: 20,
+    location: 'Surat',
+    bio: 'PRACTICAL2-REACT PROPS'
+  }
   return (
     <div className="App">
-      <ParentComponent />
+      <Userprofile name={userData.name} age={userData.age} location={userData.location} bio={userData.bio} />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
